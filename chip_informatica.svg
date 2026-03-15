@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#3b82f6">
+  <rect x="25" y="25" width="50" height="50" rx="5" />
+  <path d="M20 30h-10 M20 40h-10 M20 50h-10 M20 60h-10 M20 70h-10" stroke="#3b82f6" stroke-width="4"/>
+  <path d="M80 30h10 M80 40h10 M80 50h10 M80 60h10 M80 70h10" stroke="#3b82f6" stroke-width="4"/>
+  <path d="M30 20v-10 M40 20v-10 M50 20v-10 M60 20v-10 M70 20v-10" stroke="#3b82f6" stroke-width="4"/>
+  <path d="M30 80v10 M40 80v10 M50 80v10 M60 80v10 M70 80v10" stroke="#3b82f6" stroke-width="4"/>
+</svg>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport - Il Postino</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button id="toggleBtn" class="icon-btn" aria-label="Espandi/Riduci">
+                <svg class="toggle-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+            <button id="searchBtnIcon" class="icon-btn" aria-label="Cerca">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Cerca artisti, giochi..." autocomplete="off">
+                <button id="searchSubmit" class="icon-btn search-submit" aria-label="Esegui Ricerca">
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+            <nav class="categories-nav">
+                <ul class="categories-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cinema.html">Cinema</a></li>
+                    <li><a href="musica.html">Musica</a></li>
+                    <li><a href="videogiochi.html">Videogiochi</a></li>
+                    <li><a href="sport.html">Sport</a></li>
+                    <li><a href="attualita-segre.html">Attualità Segrè</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <div class="category-header">
+            <h1>Sport</h1>
+            <p class="category-description">Dalle tribune alla pista: risultati, calciomercato e motori.</p>
+        </div>
+        
+        <div class="article-grid" id="categoryArticlesContainer">
+            <!-- Gli articoli verranno caricati qui dinamicamente -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
