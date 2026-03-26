@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Postino - Piccolo Post</title>
+    <!-- Modern Google Font for sleek typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Red Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <!-- Persistent Icons Area -->
+        <div class="sidebar-header">
+            <button id="toggleBtn" class="icon-btn" aria-label="Espandi/Riduci">
+                <svg class="toggle-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+            <button id="searchBtnIcon" class="icon-btn" aria-label="Cerca">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Expanded Content Area -->
+        <div class="sidebar-content">
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Cerca artisti, giochi, argomenti futuri..." autocomplete="off">
+                <button id="searchSubmit" class="icon-btn search-submit" aria-label="Esegui Ricerca">
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Category Navigation -->
+            <nav class="categories-nav">
+                <ul class="categories-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cinema.html">Cinema</a></li>
+                    <li><a href="musica.html">Musica</a></li>
+                    <li><a href="videogiochi.html">Videogiochi</a></li>
+                    <li><a href="sport.html">Sport</a></li>
+                    <li><a href="attualita-segre.html">Attualità Segrè</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <div class="logo-wrapper">
+            <!-- New Static Logo with Animation -->
+            <img src="logo.jpg" class="animated-logo" id="mainLogo" alt="Il Postino Logo">
+        </div>
+        
+        <!-- Welcome Message -->
+        <div class="welcome-text">
+            <h1>Benvenuto su <span>IL POSTINO</span></h1>
+            <p>Il Piccolo Post - Esplora le redazioni per scoprire le ultime novità.</p>
+        </div>
+
+        <!-- Redazioni Section -->
+        <div class="redazioni-section" style="width: 100%; max-width: 1200px; margin-top: 80px; margin-bottom: 80px;">
+            <h2 class="section-title">LE NOSTRE <span>REDAZIONI</span></h2>
+            <div class="article-grid">
+                <a href="cinema.html" class="article-card category-card">
+                    <div class="article-image" style="background-image: url('cinema_category.png');"></div>
+                    <div class="article-content">
+                        <span class="article-tag">Sezione</span>
+                        <h2 class="article-title">Cinema</h2>
+                        <p class="article-excerpt">Recensioni, anteprime e approfondimenti dal mondo del grande schermo.</p>
+                    </div>
+                </a>
+                <a href="musica.html" class="article-card category-card">
+                    <div class="article-image" style="background-image: url('musica_category.png');"></div>
+                    <div class="article-content">
+                        <span class="article-tag">Sezione</span>
+                        <h2 class="article-title">Musica</h2>
+                        <p class="article-excerpt">Tutte le novità, i nuovi album e le tendenze della scena musicale.</p>
+                    </div>
+                </a>
+                <a href="videogiochi.html" class="article-card category-card">
+                    <div class="article-image" style="background-image: url('videogiochi_category.png');"></div>
+                    <div class="article-content">
+                        <span class="article-tag">Sezione</span>
+                        <h2 class="article-title">Videogiochi</h2>
+                        <p class="article-excerpt">Dalle saghe classiche alle ultime uscite: il mondo videoludico ai raggi X.</p>
+                    </div>
+                </a>
+                <a href="sport.html" class="article-card category-card">
+                    <div class="article-image" style="background-image: url('sport_category.png');"></div>
+                    <div class="article-content">
+                        <span class="article-tag">Sezione</span>
+                        <h2 class="article-title">Sport</h2>
+                        <p class="article-excerpt">Analisi tattiche, storie leggendarie e attualità dal mondo dello sport.</p>
+                    </div>
+                </a>
+                <a href="attualita-segre.html" class="article-card category-card">
+                    <div class="article-image" style="background-image: url('scuola_category.jpg');"></div>
+                    <div class="article-content">
+                        <span class="article-tag">Sezione</span>
+                        <h2 class="article-title">Attualità Segrè</h2>
+                        <p class="article-excerpt">Interviste ai professori, cronaca scolastica e vita d'istituto.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

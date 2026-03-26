@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lettura Articolo - Il Postino</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button id="toggleBtn" class="icon-btn" aria-label="Espandi/Riduci">
+                <svg class="toggle-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+            <button id="searchBtnIcon" class="icon-btn" aria-label="Cerca">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Cerca artisti, giochi..." autocomplete="off">
+                <button id="searchSubmit" class="icon-btn search-submit" aria-label="Esegui Ricerca">
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+            <nav class="categories-nav">
+                <ul class="categories-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cinema.html">Cinema</a></li>
+                    <li><a href="musica.html">Musica</a></li>
+                    <li><a href="videogiochi.html">Videogiochi</a></li>
+                    <li><a href="sport.html">Sport</a></li>
+                    <li><a href="attualita-segre.html">Attualità Segrè</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <!-- Contenitore Lettore Dinamico -->
+        <article class="article-reader" id="articleReader" style="display:none;">
+            <header class="article-reader-header">
+                <span class="article-tag" id="articleTag">Tag</span>
+                <span class="article-tag" id="articleCategory" style="background:#0F3859; margin-left:5px;">Categoria</span>
+                <h1 id="articleTitle">Titolo Articolo</h1>
+            </header>
+            
+            <img class="article-reader-img" id="articleImg" src="" alt="Copertina Articolo">
+            
+            <div class="article-reader-body" id="articleBody">
+                <!-- Verrà popolato dinamicamente con paragrafi di testo -->
+            </div>
+            
+            <div class="article-reader-footer">
+                <div class="metric-badge" title="Visualizzazioni di questo articolo">
+                    <span class="metric-icon">👁️</span>
+                    <span class="metric-value" id="articleViewCount">0</span>
+                    <span class="metric-label">Visite Articolo</span>
+                </div>
+                <button class="metric-badge like-btn" id="articleLikeBtn" title="Incoraggia questo articolo!">
+                    <span class="metric-icon heart-icon">🤍</span>
+                    <span class="metric-value" id="articleLikeCount">0</span>
+                    <span class="metric-label">Mi Piace</span>
+                </button>
+            </div>
+        </article>
+        
+        <div id="articleError" style="display:none; text-align:center; padding: 50px;">
+            <h2 style="color:var(--accent-red)">Articolo non trovato</h2>
+            <p style="opacity:0.8; margin-top:10px;">Questa stesura non è presente nei nostri database, <br>selezionane un altro dalla griglia.</p>
+            <a href="index.html" style="display:inline-block; margin-top:20px; color:var(--text-blue); font-weight:bold;">Torna alla Home</a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
